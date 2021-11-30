@@ -93,15 +93,15 @@ export default function RandomPwdComparison(props) {
       if (converted < 60){
         timeUnit = "minutes";
       } else {
-        converted = converted.divide(60);
+        converted = bigInt(Math.floor(converted)).divide(60);
         if (converted < 24){
           timeUnit = "hours";
         } else {
-          converted = converted.divide(24);
+          converted = bigInt(Math.floor(converted)).divide(24);
           if (converted < 365){
             timeUnit = "days";
           } else {
-            converted = converted.divide(365);
+            converted = bigInt(Math.floor(converted)).divide(365);
             timeUnit = "years";
           }
         }
@@ -137,8 +137,8 @@ export default function RandomPwdComparison(props) {
         </p>
       </div>
       <h1>Random Password Variation:</h1>
-      <h3>Your Password: {enteredPassword}</h3>
       <div className={classes.h}>
+        <h3>Your Password: {enteredPassword}</h3>
         <p>
           A computer can guess more than 10<sup>8</sup> different passwords per second. There are 93 characters that
           could make up a character in a password. A password of length 20 has 93<sup>20</sup> = 2.34
