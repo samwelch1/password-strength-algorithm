@@ -134,7 +134,7 @@ export default function EntropyInfo(props) {
           Digits have a pool of 10, lowercase and uppercase are 26 each, and special symbols have a pool of 32.
           As an example, this means a password with only digits and lowercase numbers have a pool of 36. <br/> <br/>
           The second quantity for computing a password's entropy is the password length. So, if we call the pool size P
-          and the length L, we just need to use the formula E = L <span> &#8226; </span> log <sub>2</sub> (L).
+          and the length L, we just need to use the formula E = L <span> &#8226; </span> log <sub>2</sub> (P).
         </p>
         <h2>Password Lists:</h2>
         <p>
