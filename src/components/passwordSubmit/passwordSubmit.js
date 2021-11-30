@@ -45,7 +45,7 @@ export default function PasswordSubmit(){
         Password Entropy Calculator
       </h1>
       <h4>
-        Please submit a sample password below.
+        Please submit your sample password below.
       </h4>
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="password">

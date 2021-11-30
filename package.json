@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "big-integer": "^1.6.51",
+    "heroku": "^7.59.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
     "react-bootstrap-form": "^0.1.4-beta6",
