@@ -108,7 +108,7 @@ export default function RandomPwdComparison(props) {
       }
     }
 
-    return "The amount of unique combinations is " + combinations + ". It would take a computer about " + converted +
+    return "The amount of unique combinations is " + combinations + ". This would take a computer about " + converted +
       " " + timeUnit + " to guess another password of this variety using a brute force algorithm."
   }
   //this is the user-entered password
